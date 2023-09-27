@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prac.css">
+    <title>Your Page Title</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="#section1">section1</a> | 
+        <a href="#section2">section2</a> | 
+        <a href="#section3">section3</a> | 
+        <a href="#section4">section4</a> |
+    </div>
+
+    <div id="main-content">
+        <h1>HTML + CSS + JavaScript Self Assessment</h1>
+        <h2 id="section1">10 tags in HTML</h2>
+        <p>
+            <ul>
+                <li>
+                    &lt;!DOCTYPE&gt;
+                    tells the browser about the HTML version of the page.
+                </li>
+                <li>
+                    &lt;html&gt;
+                    is the root element of an HTML page.
+                </li>
+                <li>
+                    &lt;head&gt;
+                    contains important information and styling of the page.
+                </li>
+                <li>
+                    &lt;body&gt;
+                    contains everything that's going to be displayed on the page.
+                </li>
+                <li>
+                    &lt;div&gt;
+                    is a generic container that can be used for styling and scripting.
+                </li>
+                <li>
+                    &lt;span&gt;
+                    is an inline container used for styling a specific piece of content.
+                </li>
+                <li>
+                    &lt;h1&gt; - &lt;h6&gt;
+                    are header tags used for defining headings, with &lt;h1&gt; being the highest level.
+                </li>
+                <li>
+                    &lt;p&gt;
+                    is used to represent a paragraph.
+                </li>
+                <li>
+                    &lt;a&gt;
+                    is used for hyperlinks.
+                </li>
+                <li>
+                    &lt;meta&gt;
+                    provides metadata about the content of the page.
+                </li>
+            </ul>
+        </p>
+        <h2 id="section2">Header Tags for SEO</h2>
+        <p>
+            <ul>
+                <li>
+                    &lt;h1&gt;
+                    represents the main title of the page and is critical for SEO.
+                </li>
+                <li>
+                    &lt;h2&gt;
+                    often represents subsections or related content to the &lt;h1&gt; tag.
+                </li>
+                <li>
+                    &lt;h3&gt; - &lt;h6&gt;
+                    provide further subdivisions of content, helping search engines understand the hierarchy of information on the page.
+                </li>
+            </ul>
+        </p>
+        <h2 id="section3">3*3 Grid Layout</h2>
+                <!-- Grid Layout -->
+        <div>
+            <div>
+                <span>| grid 1,1 |</span>
+                <span>| grid 1,2 |</span>
+                <span>| grid 1,3 |</span>
+            </div>
+            <div>
+                <span>| grid 2,1 |</span>
+                <span>| grid 2,2 |</span>
+                <span>| grid 2,3 |</span>
+            </div>
+            <div>
+                <span>| grid 3,1 |</span>
+                <span>| grid 3,2 |</span>
+                <span>| grid 3,3 |</span>
+            </div>
+        </div>
+        <h2 id="section4">CSS</h2>
+        <h4>gallery for box model</h4>
+        <div class="gallery">
+            <div class="box" id="box1">    
+                border: 0px;
+                margin: 0px;
+                padding: 0px;</div>
+            <div class="box" id="box2">
+                border: 5px;
+                margin: 0px;
+                padding: 0px;
+            </div>
+            <div class="box" id="box3">
+                border: 10px;
+                margin: 0px;
+                padding: 0px;
+            </div>
+            <div class="box" id="box4">
+                border: 5px;
+                margin: 0px;
+                padding: 0px;
+            </div>
+            <div class="box" id="box5">
+                border: 5px;
+                margin: 5px;
+                padding: 0px;
+            </div>
+            <div class="box" id="box6">
+                border: 5px;
+                margin: 10px;
+                padding: 0px;
+            </div>
+            <div class="box" id="box7">
+                border: 5px;
+                margin: 0px;
+                padding: 0px;
+            </div>
+            <div class="box" id="box8">
+                border: 5px;
+                margin: 0px;
+                padding: 5px;
+            </div>
+            <div class="box" id="box9">
+                border: 5px;
+                margin: 0px;
+                padding: 10px;
+            </div>
+        </div>
+        <div>
+            <h4>different font sizes</h4>
+            <ul>
+                <li style="font-size:20px;">20px - Used when precise control over text size is needed.</li>
+                <li style="font-size:1em;">1em - Relative to the font-size of the element's parent, used for scalable designs.</li>
+                <li style="font-size:1.5em;">1.5em - 50% larger than the parent's font-size, used for highlighting text.</li>
+                <li style="font-size:100%;">100% - Same size as the parent's font size, used for consistency.</li>
+                <li style="font-size:2rem;">2rem - Relative to the root element's font size, used for consistent scaling.</li>
+                <li style="font-size:16pt;">16pt - Used for print media, not recommended for screen display.</li>
+            </ul>
+        </div>
+        <div id="position-container">
+            <div id="static">
+                Static: this box behaves normally on the page
+                Used when there's no specific positioning intended for an element.
+            </div>
+            <div id="relative">
+                Relative: top: 0 (the distance to the elements on its top is 0)
+                Used when the positioning of an element is affected by surrounding elements.
+            </div>
+            <div id="absolute">
+                Absolute: top: 30px (This box is 30px from the top of #position-container)
+                Used when an element should be placed at exact position on the page regardless of other elements.
+            </div>
+            <div id="fixed">
+                Fixed: bottom: 30px; right: 10px;
+                Used when an element should stay at a fixed position on the page regardless of scrolling.
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">Footer: fix positioning, margin-bottom = 0</div>
+</body>
+</html>
